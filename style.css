@@ -76,6 +76,21 @@ body {
   max-width: 800px;
   margin: 0 auto;
 }
+
 .introduction img {
   max-height: 400px;
+}
+
+.features {
+  background: #f9f6ef;
+}
+
+.features-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.features-wrapper .feature:nth-child(2) {
+  padding: 0 20px;
 }
