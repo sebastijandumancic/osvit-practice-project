@@ -79,10 +79,13 @@ body {
 
 .introduction img {
   max-height: 400px;
+  position: relative;
+  bottom: -50px;
 }
 
 .features {
   background: #f9f6ef;
+  padding: 50px 0;
 }
 
 .features-wrapper {
