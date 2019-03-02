@@ -34,6 +34,7 @@ body {
   position: relative;
   background-image: url("assets/header_visual.jpg");
   background-repeat: no-repeat;
+  background-size: cover;
   height: 500px;
   display: flex;
   align-items: center;
@@ -63,4 +64,18 @@ body {
 
 .hero-cta button + button {
   margin-left: 20px;
+}
+
+.introduction .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper {
+  max-width: 800px;
+  margin: 0 auto;
+}
+.introduction img {
+  max-height: 400px;
 }
