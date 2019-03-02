@@ -42,4 +42,25 @@ body {
 
 .hero-content {
   color: white;
+  text-align: center;
+}
+
+.button {
+  border: 0;
+  padding: 10px 30px;
+  color: white;
+  text-transform: uppercase;
+}
+
+.button-primary {
+  background-color: #f0795e;
+}
+
+.button-secondary {
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.hero-cta button + button {
+  margin-left: 20px;
 }
