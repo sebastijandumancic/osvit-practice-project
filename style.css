@@ -42,4 +42,10 @@ body {
 
 .hero-content {
   color: white;
+  text-align: center;
+}
+
+.button {
+  border: 0;
+  cursor: pointer;
 }
