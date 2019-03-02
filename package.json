@@ -4,7 +4,7 @@
   "description": "First practice project",
   "main": "index.html",
   "scripts": {
-    "start": "browser-sync start --server --files '*.css'"
+    "start": "browser-sync start --server --files '*.css, *.html, *.js'"
   },
   "repository": {
     "type": "git",
