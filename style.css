@@ -1,11 +1,3 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-}
-
 .header {
   display: flex;
   justify-content: space-between;
@@ -46,22 +38,6 @@ body {
   text-align: center;
 }
 
-.button {
-  border: 0;
-  padding: 10px 30px;
-  color: white;
-  text-transform: uppercase;
-}
-
-.button-primary {
-  background-color: #f0795e;
-}
-
-.button-secondary {
-  background-color: transparent;
-  border: 2px solid #fff;
-}
-
 .hero-cta button + button {
   margin-left: 20px;
 }
@@ -84,7 +60,6 @@ body {
 }
 
 .features {
-  background: #f9f6ef;
   padding: 50px 0;
 }
 
@@ -135,4 +110,41 @@ body {
 
 .person h1 {
   margin-top: 40px;
+}
+
+.pricing-wrapper {
+  padding: 50px 0;
+}
+
+.pricing-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.pricing-options .package:first-child {
+  margin-right: 15px;
+}
+
+.pricing-options .package:last-child {
+  margin-left: 15px;
+}
+
+.package {
+  background: white;
+  width: 50%;
+  padding: 20px;
+}
+
+.package-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.package-header h1,
+.package-header h2 {
+  margin: 0;
 }
