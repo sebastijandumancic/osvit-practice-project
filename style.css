@@ -134,6 +134,17 @@
   background: white;
   width: 50%;
   padding: 20px;
+  transition: 0.2s;
+}
+
+.package:hover {
+  background: red;
+  color: white;
+  transform: translateY(-20px);
+}
+
+.package:hover h1 {
+  color: blue;
 }
 
 .package-header {
