@@ -30,7 +30,7 @@
 
 .hero {
   position: relative;
-  background-image: url("assets/header_visual.jpg");
+  background-image: url('assets/header_visual.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   height: 500px;
@@ -90,7 +90,7 @@
 
 .testimonials {
   color: white;
-  background-image: url("assets/reviews_visual.jpg");
+  background-image: url('assets/reviews_visual.jpg');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
@@ -190,4 +190,52 @@
 .package-header h1,
 .package-header h2 {
   margin: 0;
+}
+
+.u-mrg-right {
+  margin-right: 12px;
+}
+
+.modal {
+  visibility: hidden;
+  position: fixed;
+  background-color: white;
+  width: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  border: 1px solid #f0795e;
+}
+
+.modal button {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.modal label {
+  margin-top: 10px;
+}
+
+.modal input {
+  padding: 10px 5px;
+}
+
+.modal input:focus {
+  color: #f0795e;
+  outline: none;
+  border: 2px solid #f0795e;
+}
+
+.modal-close {
+  align-self: flex-end;
+}
+
+.is-visible {
+  visibility: visible;
+}
+
+.modal-form {
+  display: flex;
+  flex-direction: column;
 }

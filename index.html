@@ -44,6 +44,22 @@
                   Download
                 </a>
               </li>
+              <li>
+                <button
+                  onclick="toggleModal('modal--login')"
+                  class="button button-primary u-mrg-right"
+                >
+                  Login
+                </button>
+              </li>
+              <li>
+                <button
+                  onclick="toggleModal('modal--registration')"
+                  class="button button-primary"
+                >
+                  Register
+                </button>
+              </li>
             </ul>
           </nav>
         </header>
@@ -170,5 +186,92 @@
         </div>
       </section>
     </main>
+    <div class="modal modal--login">
+      <form class="modal-form">
+        <button
+          class="button button-tertiary modal-close"
+          onclick="toggleModal('modal--login')"
+          type="button"
+        >
+          X
+        </button>
+        <label for="username--login">Korisničko ime</label>
+        <input id="username--login" placeholder="Unesite korisničko ime" />
+        <label for="password--login">Lozinka</label>
+        <input
+          type="password--login"
+          id="password"
+          placeholder="Unesite lozinku"
+        />
+        <button class="button button-primary" type="button">Prijava</button>
+        <button
+          class="button button-tertiary"
+          onclick="switchModal('modal--registration')"
+          type="button"
+        >
+          Nemaš korisnički račun ? Registraraj se
+        </button>
+        <button class="button button-tertiary" type="submit">
+          Zaboravio sam lozinku
+        </button>
+      </form>
+    </div>
+    <div class="modal modal--registration">
+      <form class="modal-form">
+        <button
+          class="button button-tertiary modal-close"
+          onclick="toggleModal('modal--registration')"
+          type="button"
+        >
+          X
+        </button>
+        <label for="username--registration">Korisničko ime</label>
+        <input
+          id="username--registration"
+          placeholder="Unesite korisničko ime"
+        />
+        <label for="password--registration">Lozinka</label>
+        <input
+          type="password--registration"
+          id="password"
+          placeholder="Unesite lozinku"
+        />
+        <button class="button button-primary" type="button">
+          Registracija
+        </button>
+        <button
+          class="button button-tertiary"
+          onclick="switchModal()"
+          type="button"
+        >
+          Imaš korisnički račun ? Prijavi se
+        </button>
+      </form>
+    </div>
+    <script>
+      function toggleModal(modalClass) {
+        const modalElementList = document.getElementsByClassName(modalClass);
+
+        const modalElement = modalElementList[0];
+        modalElement.classList.toggle('is-visible');
+        toggleBodyLock();
+      }
+
+      function switchModal() {
+        const modalElementList = document.getElementsByClassName('modal');
+        for (let index = 0; index < modalElementList.length; index++) {
+          modalElementList[index].classList.toggle('is-visible');
+        }
+      }
+
+      function toggleBodyLock() {
+        const main = document.getElementsByTagName('main')[0];
+        main.style.opacity = main.style.opacity === '0.2' ? 'initial' : '0.2';
+
+        const body = document.getElementsByTagName('body')[0];
+        body.style.position =
+          body.style.position === 'fixed' ? 'initial' : 'fixed';
+      }
+    </script>
   </body>
 </html>
